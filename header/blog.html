@@ -4,16 +4,29 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="med.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+		function mobile_menu(){
+			var a=document.getElementById('dropdown');
+			if (a.style.display=="none") {
+				a.style.display="block";
+			}
+			else{
+				a.style.display="none";
+			}
+		}
+	</script>
 
 	<title>Blog</title>
 </head>
 <body>
-	<div class="header">
-		<div id="welcome">
-			<span>Welcome To our Cleaning Company</span>
+	<div class="header" >
+		<div style="float:left !important;margin-left: 8%;" id="welcome">
+			<span style="">Welcome To our Cleaning Company</span>
 		</div>
-		<div id="phone-email" style="padding-left: 250px;">
-			<span>Phone: +33 6 51 70 12 73 Email: cleanUp<span id="Email">@company.com</span></span>
+		<div id="phone-email" style="float: right;">
+				<span>Phone: +33 6 51 70 12 73</span>
+				<span>Email: cleanUp<span id="Email">@company.com</span></span>
+				
 		</div>
 	</div>
 	<div class="nav-bar">
@@ -29,6 +42,23 @@
 			<li id="Request"><a href="#">Request A Quote</a></li>
 		</ul>
 	</div>
+	<div class="nav-bar-mobile">
+		<div>
+			<img style="width: 25%;margin-left: 5%" src="img/logo.png">
+			<input type="button" name="" id="btn_menu" onclick="mobile_menu()" style="float: right;background-image: url(img/menu.png);width: 40px;height: 40px;margin-right: 5%;cursor: pointer; border: 0px; border-style: none;">
+		</div>
+		<ul id="dropdown" style="display: none;">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Our Works</a></li>
+			<li><a href="#">Pricing</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contact</a></li>
+			<li ><a href="#">Request A Quote</a></li>
+		</ul>
+	</div>
 	<div id="Blog">
 		<p>Blog</p>
 	</div>
+</body>

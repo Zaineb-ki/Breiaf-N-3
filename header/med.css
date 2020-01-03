@@ -1,15 +1,18 @@
 body {
 	margin: 0;
+	width: 100% !important;
 	
 }
 .header {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	font-size: 14px;
 	font-family: 'poppins light' ;
 	color: #7C7C7C;
 	height: 40px;
 	line-height: 40px;
+	/*overflow: hidden !important;*/
+
 }
 
 #Email{
@@ -53,6 +56,7 @@ body {
 	margin:0;
 	background-color:#38ADA9;
 	height: 80px;
+	width: 100% !important;
 }
 #Blog p{
 	font-family: 'poppins medium' ;
@@ -62,5 +66,34 @@ body {
     vertical-align: middle;
     line-height: 80px;
     position:absolute;
-    left: 227px;
+    /*left: 227px;*/
+    margin-left: 15%;
+}
+.nav-bar-mobile{
+	display: none;
+}
+#dropdown li{
+	list-style: none;
+	line-height: 40px;
+}
+#dropdown li a{
+	text-decoration: none;
+	padding-left: 30px;
+}
+
+@media screen and (max-width: 930px){
+	.nav-bar{
+		display: none !important;
+	}
+	.nav-bar-mobile{
+		display: block !important;
+	}
+	#phone-email{
+		display: none;
+	}
+	#Blog p{
+		text-align:  center !important;
+		position:relative !important;
+		margin-left: 0px;
+	}
 }
