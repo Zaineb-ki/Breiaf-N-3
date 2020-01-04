@@ -75,10 +75,15 @@ body {
 #dropdown li{
 	list-style: none;
 	line-height: 40px;
+	font-family: 'poppins Regular';
+	color: #7C7C7C;
 }
 #dropdown li a{
 	text-decoration: none;
 	padding-left: 30px;
+	font-family: 'poppins Regular';
+	color: #7C7C7C;
+	font-size: 20px;
 }
 
 @media screen and (max-width: 930px){
@@ -96,4 +101,129 @@ body {
 		position:relative !important;
 		margin-left: 0px;
 	}
+
+}
+.father{
+	padding-top: 7%;
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto; 
+	/*background-color: yellow;*/
+	
+
+}
+.wife1{
+  /* background-color: red;*/
+   
+   width: 68%;
+
+}
+.wife2{
+	width: 28%;
+  /* background-color: blue;*/
+   
+
+
+   
+}
+.tswira1{
+	/*background-color: gray;*/
+	margin-left:12px;
+	justify-content: space-between;
+	border: 1px solid gray;
+	display: flex;
+	margin-bottom: 20px;
+	width: 97%;
+	height: 15%;
+    
+}
+.tswira1:hover{
+	opacity: 0.5;
+	
+
+}
+.para{
+	width: 460px;
+	
+}
+.para h3{
+	font-family: 'poppins medium';
+}
+.para p{
+	font-family: 'poppins light';
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.mamatswira{
+	/*background-color: purple;*/
+	display: flex;
+	justify-content: space-around;
+	
+	
+}
+.mama1{
+	/*background-color: brown;*/
+
+	width: 47%;
+    border: 1px solid gray
+
+}
+.mama1:hover{
+	opacity: 0.5;
+	 
+}
+.mama2{
+	/*background-color: orange;*/
+	width: 47%;
+	 border: 1px solid gray
+	
+
+}
+.mama2:hover{
+	opacity: 0.5;
+
+	 
+}
+.parag{
+	font-size: 20px;
+	line-height: 23px;
+	padding: 10px;
+}
+.wife2  p{
+	
+	/*background-color: pink;*/
+	padding-bottom: 20px;
+	width: 80%;
+	margin-left: 20px;
+	border-bottom: 0.2px solid black;
+	font-size: 20px;
+	font-family: 'poppins medium';
+	color: #333333;
+}
+.wife2 h2{
+	text-align: center;
+	color: #38ADA9;
+	font-family: 'poppins medium';
+}
+h4{
+	font-family: 'poppins medium';
+}
+p {
+	font-family: 'poppins light';
+	font-size: 16px;
+}
+
+
+@media screen and (max-width: 930px){
+	.topheader{
+		width: 100%;
+	}
+	.father{
+			
+	}
+
 }
