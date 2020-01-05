@@ -247,7 +247,35 @@ p {
 /*==================
  CONTENT SECTION Services
 ====================*/
+.Services-all{
+    display: flex;
+    width: 100%;
+    justify-content: center
+}
 
+
+.Box {
+    width: 25%;
+    margin: 100px 40px 100px 40px;
+}
+.services-img{
+    width: 100%;
+}
+.content h3,.content p{
+  float: left;
+  text-align: left;
+  width: 94%;
+  font-family: "poppins";
+  color: #707070;
+  padding-left: 12px;
+}
+
+.content h3 {
+    font-size: 30px;
+}
+  .content p {
+      font-size: 16px;
+  }
 
 
 
@@ -262,18 +290,17 @@ p {
 /*==================
  FOOTER SECTION
 ====================*/
-.footer .Copyright p{
+.footer .Copyright p {
     text-align: center;
-    color:  #5C5C5C;
-    margin-top: auto;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
+    color :  #5C5C5C;
+    margin-top : auto;
+    position : absolute;
+    bottom : 0px;
+    left : 0px;
     padding-top: 20px;
-    width: 100%;
-
-
+    width : 100%;
 }
+
 .footer {
     font-family: "poppins";
     background-color: #FAFAFA;
