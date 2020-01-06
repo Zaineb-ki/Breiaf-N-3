@@ -276,12 +276,46 @@ p {
   .content p {
       font-size: 16px;
   }
-
+  @media screen and (min-width:375px){
+      .Box{
+          
+      }
+  }
+/*==================
+ CONTENT SECTION Our Works
+====================*/
 
 
 /*==================
  CONTENT SECTION Contact
 ====================*/
+.flex-res{ 
+    display: flex;
+}
+
+.border {
+    width: 44%;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    border: 1px solid #7C7C7C;
+}
+.border img {
+    height: 100%;
+}
+.border h3 {
+    color: #38ADA9;
+    margin-left: 5%;
+    font-family: "poppins medium";
+    font-size: 26px;
+}
+.border p {
+    margin-left: 5%;
+    margin-top: 12%;
+    font-family: "poppins medium";
+    font-size: 16px;
+    color: #707070;
+}
 
 
 
