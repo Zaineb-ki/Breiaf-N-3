@@ -276,18 +276,21 @@ p {
   .content p {
       font-size: 16px;
   }
-  @media screen and (min-width:375px){
-      .Box{
+  @media screen and (max-width:375px){
+      .Services-all {
+          flex-direction: column;
+          width: 80%;
+          margin-top: 16%;
+
           
+      }
+      .Box {
+          width: 100%;
+          margin: 6%;
       }
   }
 /*==================
  CONTENT SECTION Our Works
-====================*/
-
-
-/*==================
- CONTENT SECTION Contact
 ====================*/
 .flex-res{ 
     display: flex;
@@ -316,7 +319,24 @@ p {
     font-size: 16px;
     color: #707070;
 }
+@media screen and (max-width:375px) {
+    .flex-res {
+        flex-direction: column;
+    }
+    .border {
+        flex-direction: column;
+        width: 100%;
+    }
+    .border  img {
+        width: 100%;
+    }
+}
 
+
+
+/*==================
+ CONTENT SECTION Contact
+====================*/
 
 
 
