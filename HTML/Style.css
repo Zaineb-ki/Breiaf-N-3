@@ -281,12 +281,22 @@ p {
           flex-direction: column;
           width: 80%;
           margin-top: 16%;
+          margin-right: 10%;
 
           
       }
       .Box {
           width: 100%;
           margin: 6%;
+      }
+      .content h3 {
+        font-size: 23px;
+        text-align: center;
+        margin-top: 1%;
+      }
+      .content p {
+          font-size: 10px;
+          margin-top: -4%;
       }
   }
 /*==================
@@ -325,7 +335,15 @@ p {
     }
     .border {
         flex-direction: column;
-        width: 100%;
+        width: 70%;
+        margin-top: 69px;
+        margin-left: 52px;
+    }
+    .border h3 {
+        font-size: 16px;
+    }
+    .border p {
+        font-size: 10px;
     }
     .border  img {
         width: 100%;
@@ -344,120 +362,74 @@ p {
 /*==================
  FOOTER SECTION
 ====================*/
-.footer .Copyright p {
-    text-align: center;
-    color :  #5C5C5C;
-    margin-top : auto;
-    position : absolute;
-    bottom : 0px;
-    left : 0px;
-    padding-top: 20px;
-    width : 100%;
-}
 
-.footer {
-    font-family: "poppins";
-    background-color: #FAFAFA;
+.footer{
     color: #3E3E3E;
-    height: 400px;
-    position: relative;
-    /*color: #3E3E3E;*/
-    top: 63px;
-    display: flex;
-    width: 100%;
-}
-
-.footer .footer-content{
-    height: 311px;
-    display: flex;
-}
-
-
-.footer .footer-content .footer-Section-pic-footer{
-    top: 80px;
-    left: 74px;
-    position: relative;
-}
-.footer .footer-content .footer-Section-descreption{
-    position: relative;
-    left: 133px;
-    top: 80px;
-}
-
-.footer .footer-content .footer-Section-descreption .text-logo{
-    font-size: 30px;
-    color: #38ADA9;
-    font-family: "poppins Medium";
-
-}
-
-
-.footer .footer-content .footer-Section-Quick-view{
-    position: relative;
-    left: 198px;
-    top: 80px;
-    list-style: none;
-    font-size: 17px;
+    background-color: #FAFAFA;
+    padding: 40px;
     font-family: "Poppins";
-}
-.footer .footer-content .footer-Section-Quick-view .Liste-Quick{
-    list-style: none;
-    color: #5C5C5C;
-    font-size: bold;
-}
-
-.footer .footer-content .footer-Section-Services{
-    position: relative;
-    left: 289px;
-    top: 80px;
-    font-size: 17px;
-    color: #5C5C5C;
+    font-size: 10px;
+    margin-top: 100px;
+    bottom: 0px;
     
 }
-.footer .footer-content .footer-Section-Quick-view .Liste-Services{
-    list-style: none;
+.footer a {
+    text-decoration: none;
     color: #5C5C5C;
-}
+    display: flex;
+  
 
-
-.footer .footer-content .footer-Section-contact-Us{
-    position: relative;
-    left: 309px;
-    top: 80px;
-    font-size: 17px;
 }
-
-.footer .footer-content .footer-Section-contact-Us .Liste-Contact{
-    color: #5C5C5C;
-    
-}
-.footer .footer-content .footer-Section-contact-Us .Contact{
-    line-height: ;
-}
-.footer .footer-content .footer-Section-contact-Us .fa-icone li {
-    
+.footer a:hover{
     color: #38ADA9;
-
 }
 
- @media screen and (max-width : 930px){
-     .footer{
-        font-family: "poppins";
-        color: #3E3E3E;
-        height: 100%;
-        position: relative ;
-        display: flex;
-        width: 100%;
-        
-     }
-     .footer .footer-content{
-         flex-direction: column;
-         top: 0px;
-         position: absolute;
-         
-         background-color: #FAFAFA;
-         
-     }
+.footer .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 12px;
     
+}
 
- }
+.footer .row .column {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    
+}
+
+.footer .row .column h2 {
+    color: #5C5C5C;
+    font-family: "poppins";
+    font-size: 14px;
+}
+
+.footer .row .column p {
+    color: #5C5C5C;
+    font-family: "poppins";
+    font-size: 10px;
+}
+.footer .row .column div {
+    padding: 3px 0;
+}
+@media screen and (max-width : 930px){
+    .footer .row {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+     }
+ 
+     .footer .row .column {
+         justify-content: center;
+         align-items: center;
+     }
+ 
+     .contact-body .contact-address .address-info{
+         align-self: center;
+     }
+     
+ 
+  } 
