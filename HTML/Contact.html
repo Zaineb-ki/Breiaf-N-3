@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CleanUp</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Script-->
+    <script type="text/javascript">
+		function mobile_menu(){
+			var a=document.getElementById('dropdown');
+			if (a.style.display=="none") {
+				a.style.display="block";
+			}
+			else{
+				a.style.display="none";
+			}
+		}
+	</script>
     <!-- Favicon -->
     <link rel="shortcut icon" href="Pics\men.png" type="image/x-icon">
 
     <!-- Main style sheet -->
-    <link href="Style.css" rel="stylesheet"> 
+    <link href="Style1.css" rel="stylesheet"> 
     
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/90140a3798.js" crossorigin="anonymous"></script>
@@ -19,69 +31,221 @@
 
 </head>
 <body>
-   <!-- Start header  -->
-   <header id="mu-header">
-    <div class="col-lg-12 col-md-12">
-     <div class="mu-header-area">
-      
-       <div class="mu-header-top-left">
-        <div class="mu-top-Welcome">
-               <span>Welcome To our Cleaning Company</span>
-   
-        </div>
-       </div>
-      
-       
-      <div class="mu-header-top-right">
-         <span><b>Phone</b>: +33 6 51 70 12 73 <b>Email</b>: cleanUp <div class="Email">@company.com</div></span>
-      </div>
-     
-    </div>
-   </div>
-  </header>
-<!-- End header  -->
+
 <!-- Start menu -->
-  
+<div class="header" >
+  <div id="welcome">
+      <span>Welcome To our Cleaning Company</span>
+  </div>
+  <div id="phone-email">
+          <span>Phone: +33 6 51 70 12 73</span>
+          <span>Email: cleanUp<span id="Email">@company.com</span></span>
+          
+  </div>
+</div>
+<div class="nav-bar">
+  <div><img src="Pics\up.png"></div>
+  <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="AboutUS.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="OurWorks.html">Our Works</a></li>
+      <li><a href="Pricing.html">Pricing</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li class="active"><a href="Contact.html">Contact</a></li>
+      <li id="Request"><a href="Request A Quote.html">Request A Quote</a></li>
+  </ul>
+</div>
+<div class="nav-bar-mobile">
+  <div>
+      <img style="width: 25%;margin-left: 5%" src="Pics\up.png">
+      <button onclick="mobile_menu()" style="float: right;margin-right: 5%;cursor: pointer; border: 0px; border-style: none;background-color: transparent;">
+          <img style="width: 40px;height: 40px; background-color: transparent;" src="Pics\menu.png">
+      </button>
+  </div>
+  <ul id="dropdown" style="display: none;">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="AboutUS.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="OurWorks.html">Our Works</a></li>
+      <li><a href="Pricing.html">Pricing</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li class="active"><a href="Contact.html">Contact</a></li>
+      <li ><a href="Request A Quote.html">Request A Quote</a></li>
+  </ul>
+</div>
 
-<section id="mu-menu">
-    <nav class="navbar navbar-default" role="navigation">  
-      <div class="container">
-        <div class="navbar-header">
-  <!-- TEXT BASED LOGO -->
-            <a class="navbar-brand" >
-                <div class="logo">
-                    <div class="img">
-                        <img width="200px" src="Pics\up.png"  Style ="position: relative;
-                        top: -40px;
-                        left: 20px;"/>
-                    </div>
-                        
+<div id="bar">
+    <p>Contact</p>
+</div>
+<div class="contact-description">
+        <div class="section-contact">
+            <div class="title">
+                <h1>Contact us</h1 s>
+            </div>
+        </div>
+        
+        <div class="image-contact">
+            <img src="Pics\bigstock-Cleaning-service-team-working-181279054.jpg"/>
+        </div>
+
+        <div class="text-contact">
+            <p>
+                For more information ، a free quote ، a question about our skills 
+                or our cleaning prices ، various works ، facilities or multi-service
+                work in Saint-Genis-Pouilly and everywhere in France ، please contact ،
+                our team is at your disposal. We will contact you as soon as we receive your message.
+                Contact Us ، To send us your comments ، your questions and service requests ، 
+                please contact us using the form below. We will get back to you within 24 hours.<br><br>
+
+               
+            </p>
+           
+        </div>
+        <div class="script-contact">
+            
+               <form id="forme-contact">
+                   <div class="input-forme-contact">
+                       <h4>Name</h4>
+                       <input type="text" placeholder="" id="Name-contact">
+                   </div>
+                   <div class="input-forme-contact">
+                       <h4>Your Email (Required)</h4>
+                       <input type="text" placeholder="" id="Email-contact">
+                   </div>
+                   <div class="input-forme-contact">
+                       <h4>Phone Number</h4>
+                       <input type="text" placeholder="" id="Phone-contact">
+                   </div>
+                   <div class="input-forme-contact">
+                    <h4>Subject</h4>
+                    <input type="text" placeholder="" id="Subject-contact">
                 </div>
-            </a>
-          </div>
-         </div>
-     </nav>
-</section>
-<section class="nav-bar">
-     <div>
-          <ul id="top-menu">
-            <li><a href="Home.html">Home</a></li>            
-            <li ><a href="AboutUS.html">About US</a></li>  
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="OurWorks.html"> Our Works</a></li>  
-            <li><a href="Pricing.html">Pricing </a></li>           
-            <li><a href="Blog.html">Blog</a></li>
-            <li class="active"><a href="Contact.html">Contact</a></li>
-            <li id="Request"><a href="Request A Quote.html">Request A Quote</a></li>
-          </ul>              
-      </div>    
-</section>
-<!-- End menu -->
+                   <div class="input-forme-contact">
+                       <h4>Your Message</h4>
+                       <textarea id="message" placeholder=""></textarea>
+                   </div>
+                   <div class="btn-contact">
+                       <input type="Submit" value="Send">
+                   </div>
+               </form>
+            
+        </div>
+</div>
 
 
-<!--Page Wrapper-->
-<div class="page-wrapper">
+<div class="map-contact">
+    <center>
+    <div class="mapouter"><div class="gmap_canvas">
+        <iframe width="747" height="518" id="gmap_canvas" src="https://maps.google.com/maps?q=2%20Rue%20Victor%20Hugo%2001630%20-%20SAINT-GENIS-POUILLY&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <a href="https://www.online-timer.net"></a>
+    </div>
+        <style>.mapouter{position:relative;text-align:right;height:518px;width:747px;}.gmap_canvas {overflow:hidden;background:none!important;height:518px;width:747px;}</style>
+    </div>
+    </center>
+</div>
+<div class="contact-phone">
+    
+    <div class="phone">
+        <span> Phone : +33 6 51 70 12 73<br></span>
+        <span> Home : 0 590 55 670</span>
+    </div>
+    <div class="Our-schedules">
+        
+        <center>
+            <p style="color: #EDBC10; font-size: 22px; font-family: poppins;">Our schedules</p>
+        </center>
+        <p class="time">LUNDI - VENDREDI : De 09h00 à 18h00</pclass="time">
+        <p class="time">Samedi : De 09h00 à 13h00
+        </p>
+    </div>
 
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--footer-->
+
+<div class="footer">
+    <div class="row">
+        <div class="column">
+           <img  src="Pics\Men.png" width="200px"/>
+            
+        </div>
+        <div class="column">
+            <h2 style="color: #38ADA9; font-size: 2em;">CleanUp</h2>
+            <div style="max-width: 300px; line-height: 2;">
+                    CleanUp is located in Saint-Genis-Pouilly in the Ain <br>
+                department, for individuals and professionals. It operates <br>
+                in the Pays de Gex. Alpha Nettoyage systematically moves <br>
+                to make a quote to offer you the best price!</div>
+            
+        </div>
+
+        <div class="column">
+            <h2>Quick View</h2>
+            <div><a href="Home.html">Home</a></div>
+            <div><a href="AboutUS.html">About-us</a></div>
+            <div><a href="Services.html">Services</a></div>
+            <div><a href="Blog.html">Blog</a></div>
+            <div><a href="Pricing.html">Pricing</a></div>
+        </div>
+
+        <div class="column">
+            <h2>Services</h2>
+            <div><a href="#">Commercial Cleaning</a></div>
+            <div><a href="#">House Cleaning</a></div>
+            <div><a href="#">Office Cleaning</a></div>
+            <div><a href="#">Glass Cleaning</a></div>
+            <div><a href="#">Window Clening</a></div>
+        </div>
+        <div class="column">
+            <h2>Contact Us</h2>
+            <div>Phone: +33 6 51 70 12 73</div>
+            <div>Email: CleanUp@company.com</div>
+            <div>Fax: +33 3 42 52 53 14</div>
+            <div>
+                <li style="display: inline-block; color: #38ADA9;"><i class="fab fa-facebook-f"></i></li>
+                <li style="display: inline-block; color: #38ADA9;"><i class="fab fa-twitter"></i></li>
+                <li style="display: inline-block; color: #38ADA9;"><i class="fab fa-instagram"></i></li>
+                <li style="display: inline-block; color: #38ADA9;"><i class="fab fa-linkedin-in"></i></li>
+                <li style="display: inline-block; color: #38ADA9;"><i class="fab fa-youtube"></i></li>
+            </div>
+        </div>
+
+    </div>
+    <p style="text-align: center; width: 100%; color: #5C5C5C; font-size: ; margin-top: 30px;">&copy; 2019 CleanUp,  All Right Reserved</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

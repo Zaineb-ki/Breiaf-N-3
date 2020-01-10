@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CleanUp</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Script-->
+    <script type="text/javascript">
+		function mobile_menu(){
+			var a=document.getElementById('dropdown');
+			if (a.style.display=="none") {
+				a.style.display="block";
+			}
+			else{
+				a.style.display="none";
+			}
+		}
+	</script>
     <!-- Favicon -->
     <link rel="shortcut icon" href="Pics\men.png" type="image/x-icon">
 
     <!-- Main style sheet -->
-    <link href="Style.css" rel="stylesheet"> 
+    <link href="Style1.css" rel="stylesheet"> 
     
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/90140a3798.js" crossorigin="anonymous"></script>
@@ -19,130 +31,475 @@
 
 </head>
 <body>
-   <!-- Start header  -->
-   <header id="mu-header">
-    <div class="col-lg-12 col-md-12">
-     <div class="mu-header-area">
-      
-       <div class="mu-header-top-left">
-        <div class="mu-top-Welcome">
-               <span>Welcome To our Cleaning Company</span>
-   
-        </div>
-       </div>
-      
-       
-      <div class="mu-header-top-right">
-         <span><b>Phone</b>: +33 6 51 70 12 73 <b>Email</b>: cleanUp <div class="Email">@company.com</div></span>
-      </div>
-     
-    </div>
-   </div>
-  </header>
-<!-- End header  -->
+
 <!-- Start menu -->
-  
-
-<section id="mu-menu">
-    <nav class="navbar navbar-default" role="navigation">  
-      <div class="container">
-        <div class="navbar-header">
-  <!-- TEXT BASED LOGO -->
-            <a class="navbar-brand" >
-                <div class="logo">
-                    <div class="img">
-                        <img width="200px" src="Pics\up.png"  Style ="position: relative;
-                        top: -40px;
-                        left: 20px;"/>
-                    </div>
-                        
-                </div>
-            </a>
-          </div>
-         </div>
-     </nav>
-</section>
-<section class="nav-bar">
-     <div>
-          <ul id="top-menu">
-            <li class="active"><a href="Home.html">Home</a></li>            
-            <li><a href="AboutUS.html">About US</a></li>  
-            <li><a href="Services.html">Services</a></li>
-            <li><a href="OurWorks.html"> Our Works</a></li>  
-            <li><a href="Pricing.html">Pricing </a></li>           
-            <li><a href="Blog.html">Blog</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li id="Request"><a href="Request A Quote.html">Request A Quote</a></li>
-          </ul>              
-      </div>    
-</section>
-<!-- End menu -->
-
-
-<!--Page Wrapper-->
-<div class="page-wrapper">
-
+<div class="header" >
+    <div id="welcome">
+        <span style="">Welcome To our Cleaning Company</span>
+    </div>
+    <div id="phone-email">
+            <span>Phone: +33 6 51 70 12 73</span>
+            <span>Email: cleanUp<span id="Email">@company.com</span></span>
+            
+    </div>
 </div>
-<!-- // Page Wrapper-->
+<div class="nav-bar">
+    <div><img src="Pics\up.png"></div>
+    <ul>
+        <li class="active"><a href="Home.html">Home</a></li>
+        <li><a href="AboutUS.html">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="OurWorks.html">Our Works</a></li>
+        <li><a href="Pricing.html">Pricing</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li id="Request"><a href="Request A Quote.html">Request A Quote</a></li>
+    </ul>
+</div>
+<div class="nav-bar-mobile">
+    <div>
+        <img style="width: 25%;margin-left: 5%" src="Pics\up.png">
+        <button onclick="mobile_menu()" style="float: right;margin-right: 5%;cursor: pointer; border: 0px; border-style: none;background-color: transparent;">
+            <img style="width: 40px;height: 40px; background-color: transparent;" src="Pics\menu.png">
+        </button>
+    </div>
+    <ul id="dropdown" style="display: none;">
+        <li class="active"><a href="Home.html">Home</a></li>
+        <li><a href="AboutUS.html">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="OurWorks.html">Our Works</a></li>
+        <li><a href="Pricing.html">Pricing</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li ><a href="Request A Quote.html">Request A Quote</a></li>
+    </ul>
+</div>
 
+
+<!-- Partie1 -->
+<section id="Partie1"> 
+        <div id="background" >
+            <span  id="background-effet" >
+            <!-- opacity: 50%; -->
+            </span>
+            <div >
+                <div id="description-home">
+                    <h1>High quality cleaning</h1>
+                    <h1>services, better and faster</h1>
+                    <h1>cleaning solution!</h1>
+                    <p >YOUR QUALITY PROFESSIONAL AND SPECIAL SERVICE</p>
+                    <br>
+                    <a href="Contact.html">Get in touch with us</a>
+                </div>
+            </div>
+        </div>    	
+</section>
+
+<!-- Partie2 -->
+
+<section id="Partie2">
+    <center>
+        <h1 class="Choosing">Why Choose Us</h1>
+        <div id="Container-partie2">
+            <div>
+                <img src="Pics/Groupe 4-1.png">
+                <h2>Pick a Time</h2>
+                <p>Select the day and time for your service</p>
+                <p>and get instant, affordable pricing.</p>
+            </div>
+            <div>
+                <img src="Pics/Groupe 4-2.png">
+                <h2>Book Instantly</h2>
+                <p>We'll confirm your appointment and take care </p>
+                <p>of payment electronically and securely.</p>
+                
+                
+            </div>
+            <div>
+                <img src="Pics/Groupe 4-3.png">
+                <h2>Your pro arrives</h2>
+                <p>An experienced, fully-equipped professional will</p>
+                <p>show up on time at your doorstep.</p>
+                
+            </div>
+        </div>
+    </center>
+</section>
+
+
+
+<!-- Partie 3 -->
+<section id="Partie3">
+    <center>
+        <h1 class="Cleaning">Cleaning Services</h1>
+        <div id="Container-partie3">
+            
+            
+            <div class="Container-partie3">
+                <h2>Residential Cleaning</h2>
+                <img src="Pics/Clean up2.jpg">
+                <p>
+                    You’ve got a busy life, and cleaning <br>
+                    takes time that you could be spending <br>
+                    with your family. Let us do the cleaning<br>
+                    for you while you enjoy life..
+                </p>
+            </div>
+            <div class="Container-partie3">
+                <h2>Garden Cleaning</h2>
+                <img src="Pics/Clean up3.jpg">
+                <p>
+                    Our cleaning teams are well trained <br>
+                    and they use high-quality cleaning <br>
+                    equipment, high-pressure washer <br>
+                    machines to clean the garden.
+                </p>
+
+            </div>
+            <div class="Container-partie3">
+                <h2>Office Cleaning</h2>
+                <img src="Pics/Clean up1.jpg">
+                <p>
+                    If you have an office, retail space,<br>
+                    daycare, or other commercial building <br>
+                    that needs to be cleaned, Clean Up <br>
+                    Services is the right choice.
+                </p>
+
+            </div>
+            <div class="Container-partie3">
+                <h2>Seasonal Cleaning</h2>
+                <img src="Pics/Clean up4.png">
+                <p>
+                    Our service packages are created to <br>
+                    give you a complete and thorough <br>
+                    deep clean for any given event or <br>
+                    season.
+                </p>
+
+            </div>
+            
+            
+        </div>
+        <a href="Services.html" id="a-partie3">More Services</a>
+    </center>
+</section>
+
+
+
+<!-- partie4 -->
+<section id="partie4">
+    <center>
+        <div id="Container-partie4">
+            <div>
+                <img src="Pics\shutterstock-137448269.png" id="img-partie4">
+            </div>
+            <div id="content-partie4">
+                <i><p>best cleaning company</p></i>
+                <h1 style="color: #EDBC10;">About Company</h1>
+                <p>We’re ready to clean up your home, office, house or a warehouse with an <br>
+                astounding and acute precision</p><br>
+                <div id="content-div1-partie4">
+                    <div>
+                        <img src="Pics/s4-icon-1.png" class="img-content-div-partie4">
+                    </div>
+                    
+                    <div class="div-h2-P-content-div-partie4">
+                        <h2  class="h2-content-div-partie4">We Know the Area</h2>
+                        <p  class="p-content-div-partie4">We insure you from not doing our job as good as we promise.</p>
+                    </div>
+                </div>
+                <div id="content-div2-partie4">
+                    <div>
+                        <img src="Pics/s4-icon-2.png" class="img-content-div-partie4" style="margin-left: 10px !important;">
+                    </div>
+                    
+                    <div class="div-h2-P-content-div-partie4">
+                        <h2 class="h2-content-div-partie4" >Quality cleans every time</h2>
+                        <p class="p-content-div-partie4">Our long history and regular clients prove that our service is qualified.</p>
+                    </div>
+
+                </div>
+                <div id="content-div3-partie4">
+                    <div>
+                        <img src="Pics/s4-icon-3.png" class="img-content-div-partie4">
+                    </div>
+                    
+                    <div class="div-h2-P-content-div-partie4">
+                        <h2 class="h2-content-div-partie4">Highly-Trained Technicians</h2>
+                        <p class="p-content-div-partie4">We insure you from not doing our job as good as we promise.</p>
+                    </div>
+                    
+                </div>
+                <div id="content-div4-partie4">
+                    <a href="AboutUS.html" id="a-partie4">More Info</a>
+                </div>
+            </div>
+            
+        </div>
+    </center>
+</section>
+
+
+<!-- partie5 -->
+<section id="partie5" >
+    <div id="container-partie5" >
+        <p class="p-partie5" >Want to get 20% off? Save the time and money?</p>
+        <a href="Services.html" id="a-partie5">More Services</a>
+    </div>
+    
+</section>
+
+
+
+<!-- partie6 -->
+
+
+<section id="partie6">
+    <center>
+        <h1 >Meet Our Team</h1>
+        <div id="container-partie6">
+            <div>
+                <img src="Pics/James Cawdale.png">
+                <h2>James Cawdale</h2>
+                <p>Office Cleaner</p>
+            </div>
+            <div>
+                <img src="Pics/Joseph Doe.png">
+                <h2>Joseph Doe</h2>
+                <p>Office Cleaner</p>
+            </div>
+            <div>
+                <img src="Pics/Daina Mason.png">
+                <h2>Daina Mason</h2>
+                <p>Office Cleaner</p>
+            </div>
+        
+        </div>
+    </center>
+    
+</section>
+
+
+
+
+<!-- partie7 -->
+<section id="partie7">
+    <center>
+        <h1>Témoignages</h1>
+        <div id="container-partie7" style="display: flex;">
+            
+                <div>
+                    <img src="Pics\jhon deo.png" id="img-partie7">
+                </div>
+                <div style="width: 80px;height: 80px;background-color: white;display: flex;
+                   align-items: center;justify-content: center;border-radius: 50%;position: relative;left: -13%;bottom: -140px">
+                    <center>
+                           <img src="Pics/g.png" id="icon-partie7" style="padding: 0px">                 
+                   </center>
+                </div>
+        </div>
+        <i>
+            <p>
+                Very satisfied. Responsible always reachable and work carried out as<br> planned. Serious and 
+                professional work!</p>
+        </i>
+        <div id="div-a-partie7">
+            <a href="#" id="a-partie7"><i>John Doe, CEO Founder, Company</i></a>
+        </div>
+        
+    </center>
+    
+</section>
+
+
+
+
+
+
+
+<section id="partie8" >
+    <center>
+        <h1>Nos projets</h1>
+        <div id="div-container-partie8">
+            <div id="content1-partie8" >
+                    <div class="content-div-partie8">
+                        <div class="p-content-div-partie8">
+                            <p>House Cleaning</p>
+                        </div>
+                    </div>
+                    <div class="content-div-partie8">
+                        <div class="p-content-div-partie8">
+                            <p>Office Cleaning</p>
+                        </div>
+                    </div>
+                    <div class="content-div-partie8">
+                        <div class="p-content-div-partie8">
+                            <p>Commercial Cleaning</p>
+                        </div>
+                    </div>
+                    <div class="content-div-partie8">
+                        <div class="p-content-div-partie8">
+                            <p>Glass Cleaning</p>
+                        </div>
+                    </div>
+            </div>
+            <!-- <div id="content2-partie8" >
+                    <h1>latest Blog</h1>
+                    <div id="content-div1-partie8">
+                        <img src="Pics\latest 1.png" id="img1-content-div1-partie8">
+                        <i><p id="p1-content-div1-partie8">05 Avril 2019</p></i>
+                        <h2 id="h2-1-content-div1-partie8">the best things you can do for <br> your furniture</h2>
+                        <div id="div-span-content-div1-partie8">
+                            <span>Vous avez envie de nettoyer vos vitres sans laisser de trace ? Aujourd’hui  la société de nettoyage professionnel des vitres WINBEST nettoyage vous dévoiler quelques secrets et les astuces de grand-mères …. Lire la suite</span>
+                        </div>
+                    </div>
+
+                    <div id="content-div1-partie8">
+                        <img src="Pics\latest 2.png" id="img1-content-div1-partie8">
+                        <i><p id="p1-content-div1-partie8">03 Nov, 2019</p></i>
+                        <h2 id="h2-1-content-div1-partie8">the best things you can do for <br> your furniture</h2>
+                        <div id="div-span-content-div1-partie8">
+                            <span>Vous avez envie de nettoyer vos vitres sans laisser de trace ? Aujourd’hui  la société de nettoyage professionnel des vitres WINBEST nettoyage vous dévoiler quelques secrets et les astuces de grand-mères …. Lire la suite</span>
+                        </div>
+                    </div>
+
+                    <div id="content-div1-partie8">
+                        <img src="Pics\latest 3.jpeg" id="img1-content-div1-partie8">
+                        <i><p id="p1-content-div1-partie8">20 Dec, 2019</p></i>
+                        <h2 id="h2-1-content-div1-partie8">the best things you can do for <br> your furniture</h2>
+                        <div id="div-span-content-div1-partie8">
+                            <span>Vous avez envie de nettoyer vos vitres sans laisser de trace ? Aujourd’hui  la société de nettoyage professionnel des vitres WINBEST nettoyage vous dévoiler quelques secrets et les astuces de grand-mères …. Lire la suite</span>
+                        </div>
+                    </div>
+                    
+            </div> -->
+            <div class="section9">
+                <h1>Latest Blog</h1>
+                <div class="blog">
+              
+                  <div class="b1">
+                    <img src="Pics/latest 1.png">
+                    <p>05 Avril 2019</p>
+                    <h2>Do hotels need professional cleaning service?</h2>
+                    <p>Maintaining a clean and tidy place is a symbol of well-maintained hygiene which results in one’s reputation in a business...</p>
+                  </div>
+                  <div class="b2">
+                    <img src="Pics/latest 2.png">
+                    <p>03 Nov, 2019</p>
+                    <h2>Importance of Restaurant Cleaning services</h2>
+                    <p>Dusting, sweeping and swabbing the floor every day can be termed as normal cleaning. This keeps the area looking neat and tidy but…</p>
+                  </div>
+                  <div class="b3">
+                    <img src="Pics/latest 3.jpeg" alt="">
+                    <p>04 Janv, 2020</p>
+                    <h2>Normal cleaning Vs Professional cleaning. Which is better?</h2>
+                    <p>Dusting, sweeping and swabbing the floor every day can be termed as normal cleaning. This keeps the area looking neat and tidy but may not eradicate dust and </p>
+                  </div>
+                </div>
+              
+              
+        </div>
+    </center>    
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--footer-->
 
 <div class="footer">
-    <div class="footer-content">
-        <div class="footer-Section-pic-footer">
-            <img width="200px" src="Pics\Men.png" href="Home.html" />
+    <div class="row">
+        <div class="column">
+           <img  src="Pics\Men.png" width="200px"/>
+            
         </div>
-        <div class="footer-Section-descreption">
-            <div class="text-logo">CleanUp</div>
-            <p>
-                CleanUp is located in Saint-Genis-Pouilly in the Ain <br>
+        <div class="column">
+            <h2 style="color: #38ADA9; font-size: 2em;">CleanUp</h2>
+            <div style="max-width: 300px; line-height: 2;">
+                    CleanUp is located in Saint-Genis-Pouilly in the Ain <br>
                 department, for individuals and professionals. It operates <br>
                 in the Pays de Gex. Alpha Nettoyage systematically moves <br>
-                to make a quote to offer you the best price!
-            </p>
-            <p>
-                &copy; 2019 CleanUp,  All Right Reserved
-            </p>
+                to make a quote to offer you the best price!</div>
+            
         </div>
-        <div class="footer-Section-Quick-view">
-            <h2 class="Title-Footer">Quick-view</h2>
-            <ul>
-                <li><a href="Home.html">Home</li>
-                <li><a href="AboutUS.html">About</a></li>
-                <li><a href="Services.html">Services</a></li>
-                <li><a href="OurWorks.html">Projects</a></li>
-                <li><a href="Request A Quote.html">Quots</a></li>
-            </ul>
-        </div>
-        <div class="footer-Section-Services">
-            <h2 class="Title-Footer">Services</h2>
-                <ul>
-                    <li><a href="#">Comercial Cleaning</a></li>
-                    <li><a href="#">House Cleaning</a></li>
-                    <li><a href="#">Office Cleanning</a></li>
-                    <li><a href="#">Glass Cleaning</a></li>
-                    <li><a href="#">Window Cleaning</a></li>
-                </ul>
 
+        <div class="column">
+            <h2>Quick View</h2>
+            <div><a href="Home.html">Home</a></div>
+            <div><a href="AboutUS.html">About-us</a></div>
+            <div><a href="Services.html">Services</a></div>
+            <div><a href="Blog.html">Blog</a></div>
+            <div><a href="Pricing.html">Pricing</a></div>
         </div>
-        <div class="footer-Section-contact-Us" style="position: relative;left: 309px;">
-            <h2 class="Title-Footer">Contact-Us</h2>
-                <p>Phone : +33 6 51 70 12 73</p>
-                <p>Email : CleanUp@company.com</p>
-                <p>Fax : +33 3 42 52 53 14</p>
-            <div class="fa-icon" >
-                <li style="display: inline-block;"><i class="fab fa-facebook-f"></i></li>
-                <li style="display: inline-block;"><i class="fab fa-twitter"></i></li>
-                <li style="display: inline-block;"><i class="fab fa-instagram"></i></li>
-                <li style="display: inline-block;"><i class="fab fa-linkedin-in"></i></li>
-                <li style="display: inline-block;"><i class="fab fa-youtube"></i></li>
+
+        <div class="column">
+            <h2>Services</h2>
+            <div><a href="#">Commercial Cleaning</a></div>
+            <div><a href="#">House Cleaning</a></div>
+            <div><a href="#">Office Cleaning</a></div>
+            <div><a href="#">Glass Cleaning</a></div>
+            <div><a href="#">Window Clening</a></div>
+        </div>
+        <div class="column">
+            <h2>Contact Us</h2>
+            <div>Phone: +33 6 51 70 12 73</div>
+            <div>Email: CleanUp@company.com</div>
+            <div>Fax: +33 3 42 52 53 14</div>
+            <div>
+                <li style="display: inline-block; color: #38ADA9;"><i class="fab fa-facebook-f"></i></li>
+                <li style="display: inline-block; color: #38ADA9;"><i class="fab fa-twitter"></i></li>
+                <li style="display: inline-block; color: #38ADA9;"><i class="fab fa-instagram"></i></li>
+                <li style="display: inline-block; color: #38ADA9;"><i class="fab fa-linkedin-in"></i></li>
+                <li style="display: inline-block; color: #38ADA9;"><i class="fab fa-youtube"></i></li>
             </div>
-
-
         </div>
+
     </div>
+    <p style="text-align: center; width: 100%; color: #5C5C5C; font-size: ; margin-top: 30px;">&copy; 2019 CleanUp,  All Right Reserved</p>
 </div>
-
-
 
 
 
