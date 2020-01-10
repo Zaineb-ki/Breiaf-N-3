@@ -127,9 +127,15 @@ body {
 		text-align:  center !important;
 		position:relative !important;
 		margin-left: 0px;
+<<<<<<< HEAD
     }
     .nav-bar-mobile #dropdown .active a {
         color: #38ADA9;
+=======
+	}
+    .nav-bar-mobile ul .active a{
+    color: #38ADA9;
+>>>>>>> d268e9b296a3ce161469635cb5c717052d619d55
     }
 }
 /*==================
