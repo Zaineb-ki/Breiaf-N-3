@@ -175,7 +175,27 @@ body {
 }
 
 
+/* partie 2 */
+#Container-partie2{
+    display: flex;
+    justify-content: center;
+}
+#Container-partie2 div{
+    margin: 0% 2% 10% 2%;
+}
 
+#Partie2 p{
+    font-family: "Poppins Light";
+    color: #7C7C7C;
+    font-size: 14px;
+    
+}
+#Partie2 h2{
+    font-family: "Poppins Medium";
+    color: #38ADA9;
+    font-size: 22px;
+    
+}
 /* Partie 3 */
 
 
@@ -580,7 +600,7 @@ body {
 
 
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 930px){
     /* partie1 */
     
     #background{
@@ -607,12 +627,10 @@ body {
 
     /* partie2 */
     #Container-partie2{
-        display: block;
+        display: list-item !important;
         width: 100%;
-        align-items: center;
-      
     }
-    #Partie2 h1{
+    .Choosing{
         margin-top: 15% !important;
         margin-bottom: 15% !important;
     }
@@ -633,7 +651,7 @@ body {
     }
     /* partie5 */
     /* partie6 */
-.Container-partie6 {
+ #container-partie6 {
     display: list-item !important;
     padding-bottom: 40px;
 }
