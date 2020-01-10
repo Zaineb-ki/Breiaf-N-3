@@ -173,73 +173,9 @@ body {
     border-radius: 50px;
     font-family: "poppins medium";
 }
-@media screen and (max-width: 767px){
-    
-    #background{
-        height: 700px !important;
-    }
-    #background-effet{
-        height: 700px !important;
-    }
-    #description-home h1{
-        font-size: 40px !important;
-        width: 85% !important;
-        line-height: 48px;
-    }
-    #description-home p{
-        font-size: 14px !important;
-        width: 85% !important;
-    }
-    #description-home{
-        position: relative !important;
-        padding-top: 50px !important;
-        width: 80% !important;
-    }
 
 
-    /* partie2 */
-    #Container-partie2{
-        display: block;
-        width: 100%;
-        align-items: center;
-      
-    }
-    #Partie2 h1{
-        margin-top: 15% !important;
-        margin-bottom: 15% !important;
-    }
-
-    /* partie3 */
-    #Container-partie3{
-        display: list-item;
-        
-    }
-    /* partie4 */
-    #Container-partie4{
-        display: list-item !important;
-        /*width: 100%;*/
-        /*background-color: tomato;
-        color: white;*/
-    }
-    #img-partie4{
-        width: 80%;
-        padding-bottom: 20px;
-    }
-    /* partie5 */
-    /* partie6 */
-    /* partie7 */
-    /* partie8 */
-}
-
-/* partie2 */
-#Partie2 h1 {
-    color: #EDBC10;
-    font-size: 38px; 
-    font-family: "poppins medium" ;
-    padding-top: 3%;
-    margin-bottom: 6%;
-}
-
+/* partie 2 */
 #Container-partie2{
     display: flex;
     justify-content: center;
@@ -252,7 +188,6 @@ body {
     font-family: "Poppins Light";
     color: #7C7C7C;
     font-size: 14px;
-    line-height: 10px;
     
 }
 #Partie2 h2{
@@ -261,8 +196,6 @@ body {
     font-size: 22px;
     
 }
-
-
 /* Partie 3 */
 
 
@@ -538,9 +471,9 @@ body {
 }
 
 .content-div-partie8 {
-    background-image: url(House Cleaning.png);
+    background-image: url(House-Cleaning.png);
     width: 100%;
-    height: 38vh;
+    height: 36vh;
 }
 
 
@@ -629,12 +562,15 @@ body {
   }
   .section9  .blog .b1,.b2,.b3{
     width: 360px;
+    text-align: left;
+    
   }
   .section9  .blog h2{
     color:#38ADA9;
     font-family: "Poppins";
     font-weight: 500;
     font-size: 19px;
+    line-height: 25px;
   }
   .section9  .blog p{
     color:#3E3E3E;
@@ -646,6 +582,142 @@ body {
     width: 367px;
     height: 266px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 930px){
+    /* partie1 */
+    
+    #background{
+        height: 700px !important;
+    }
+    #background-effet{
+        height: 700px !important;
+    }
+    #description-home h1{
+        font-size: 40px !important;
+        width: 85% !important;
+        line-height: 48px;
+    }
+    #description-home p{
+        font-size: 14px !important;
+        width: 85% !important;
+    }
+    #description-home{
+        position: relative !important;
+        padding-top: 50px !important;
+        width: 80% !important;
+    }
+
+
+    /* partie2 */
+    #Container-partie2{
+        display: list-item !important;
+        width: 100%;
+    }
+    .Choosing{
+        margin-top: 15% !important;
+        margin-bottom: 15% !important;
+    }
+
+    /* partie3 */
+    #Container-partie3{
+        display: list-item;
+        
+    }
+    /* partie4 */
+    #Container-partie4{
+        display: list-item !important;
+        
+    }
+    #img-partie4{
+        width: 80%;
+        padding-bottom: 20px;
+    }
+    /* partie5 */
+    /* partie6 */
+ #container-partie6 {
+    display: list-item !important;
+    padding-bottom: 40px;
+}
+    /* partie7 */
+    /* partie8 */
+	#content1-partie8{
+        display:list-item !important;
+    }
+    #partie8{
+        padding-bottom: 100px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* partie2 */
+#Partie2 h1 {
+    color: #EDBC10;
+    font-size: 38px; 
+    font-family: "poppins medium" ;
+    padding-top: 3%;
+    margin-bottom: 6%;
+}
+
+#Container-partie2{
+    display: flex;
+    justify-content: center;
+}
+#Container-partie2 div{
+    margin: 0% 2% 10% 2%;
+}
+
+#Partie2 p{
+    font-family: "Poppins Light";
+    color: #7C7C7C;
+    font-size: 14px;
+    line-height: 10px;
+    
+}
+#Partie2 h2{
+    font-family: "Poppins Medium";
+    color: #38ADA9;
+    font-size: 22px;
+    
+}
+
+
+
+
+
 
 
 
@@ -900,6 +972,9 @@ p {
 ====================*/
 .content1-About-us{
     padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .content1-About-us .about-us-section1{
     display: flex;
@@ -919,6 +994,9 @@ p {
     padding: 0%;
     float: right;
     font-size: 20px;
+    color: #000000;
+    font-size: 20px;
+
 }
 .content1-About-us .about-us-section1  .img1-about-us{
     width: 50%;
@@ -970,13 +1048,51 @@ p {
     font-size: 20px;
 
 }
+@media screen and ( max-width : 930px ){
+    .about-us-section1{
+        flex-direction: column-reverse;
+        width: 1050px;
+        margin-right: 100%;
+        
+    }
+
+    .about-us-section1 .text1-about-us p{
+        text-align: center;
+        margin-right: 85px;
+        font-size: 16px;
+        
+    }
+    .about-us-section2{
+        flex-direction: column;
+        width: 1050px;
+        margin-right: 100%;
+        
+    }
+    
+    .img2-about-us{
+        margin-left: -68px;
+    }
+    .about-us-section2 .text2-about-us p{
+        text-align: center;
+        margin-left: 42px;
+        font-size: 16px;
+
+        
+    }
+}
 
 /*==================
  CONTENT SECTION Contact
 ====================*/
+.contact-description{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    justify-content: space-between;
+}
 
-
-.contact-description .title h1{
+.section-contact .title h1{
     color: #707070;
     margin-left: 25%;
     padding-top: 2%;
@@ -985,7 +1101,7 @@ p {
 
 .contact-description .image-contact img {
     width: 739px;
-    margin-left: 11%;
+    margin-left: 26%;
     margin-top: 2%;
     border-radius: 42px;
     display: flex;
@@ -1046,7 +1162,7 @@ p {
 .script-contact{
     width: 40%;
     margin-left: 1000px;
-    margin-top: -44%;
+    margin-top: -48%;
     margin-right: 5%;
     
     
@@ -1099,7 +1215,9 @@ p {
 .map-contact{
     margin-top: 100px;
 }
+@media screen and ( max-width : 930px){
 
+}
 
 /*==================
  CONTENT SECTION Request a Quote
