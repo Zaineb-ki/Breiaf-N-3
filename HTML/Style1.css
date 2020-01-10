@@ -127,7 +127,10 @@ body {
 		text-align:  center !important;
 		position:relative !important;
 		margin-left: 0px;
-	}
+    }
+    .nav-bar-mobile #dropdown .active a {
+        color: #38ADA9;
+    }
 }
 /*==================
  CONTENT SECTION Home
@@ -650,6 +653,17 @@ body {
         padding-bottom: 20px;
     }
     /* partie5 */
+    #partie5{
+        height: 30%;
+    }
+    #partie5 #container-partie5{
+        flex-direction: column;
+        text-align: center;
+    }
+    #a-partie5{
+        margin: auto;
+    }
+
     /* partie6 */
  #container-partie6 {
     display: list-item !important;
@@ -1090,6 +1104,7 @@ p {
     flex-wrap: wrap;
     margin-top: 45px;
     justify-content: space-between;
+    width: 100% !important;
 }
 
 .section-contact .title h1{
@@ -1098,51 +1113,36 @@ p {
     padding-top: 2%;
     font-family: "poppins medium";
 }
+#cc{
+    background-color: transparent;
+    width: 55% !important;
+    justify-content: center !important;
+}
+.contact-description #cc .image-contact{
+    background-color: transparent;
+    justify-content: center !important;
+    width: 100%;
+    padding: 0px !important;
+}
+.contact-description #cc .image-contact img {
+    width: 80%;
+    margin: auto !important;
+    border-radius: 45px;
 
-.contact-description .image-contact img {
-    width: 739px;
-    margin-left: 26%;
-    margin-top: 2%;
-    border-radius: 42px;
-    display: flex;
+
+    
 }
-.contact-description .text-contact{
+.contact-description #cc .text-contact{
     display: flex;
+    width: 100%;
+
 }
-.contact-description .text-contact p{
-    margin-left: 175px;
+.contact-description #cc .text-contact p{
+   
     color: #707070;
     font-family: "poppins regular";
     font-size: 22px;
     width: 45%;
-}
-.contact-phone{
-    display: flex;
-    text-align: center;
-    width: 100%;
-    margin-top: 50px;
-
-}
-.contact-phone .phone{
-    color: #7C7C7C;
-    font-family: "poppins";
-    font-size: 22px;
-    float: left;
-    width: 45%;
-    margin-left: 500px;
-    margin-top: 84px;
-    
-}
-.contact-phone .Our-schedules{
-    
-    float: right;
-    width: 45%;
-    margin-right: 500px;
-}
-.contact-phone .Our-schedules .time {
-    color: #7C7C7C;
-    font-family: "poppins";
-    font-size: 22px;
 }
 
 .contact{
@@ -1158,48 +1158,38 @@ p {
    
 }
 
+/* ========Script======== */
 
-.script-contact{
-    width: 40%;
-    margin-left: 1000px;
-    margin-top: -48%;
-    margin-right: 5%;
-    
-    
+.script{
+	width: 40%;
 }
-.script-contact .forme-contact{
-    display: flex;
-}
-.script-contact h4{
+.script .titre{
     color: #EDBC10;
     font-family: "poppins";
     font-size: 22px;
 }
-
-.script-contact .input-forme-contact{
-	margin-bottom: 5px;
+.script .input-forme-contact{
+    margin-bottom: 80px;
 }
-.script-contact .input-forme-contact  input,
-.script-contact textarea{
-	width: 638px;
+.script .input-forme-contact{
+	margin-bottom: 41px;
+}
+.script .input-forme-contact input[type="text"],
+.script .input-forme-contact input[type="email"],
+ .script .input-forme-contact input[type="phone"],
+.script textarea{
+	width: 600px;
 	border: 1px solid #ECE3E3;
     padding: 7px;
     background-color: #F8F8F8;
+    height: 46%;
 }
-.script-contact .forme-contact .input-forme-contact #Name-contact ,
-#Email-contact , #Phone-contact , #Subject-contact{
-	width: 638px;
-	border: 1px solid #ECE3E3;
-    padding: 7px;
-    background-color: #F8F8F8;
-    height: 10%;
-}
-.script-contact textarea{
-	height: 190px;
+.script textarea{
+	height: 130px;
 	resize: none;
 }
-.script-contact .btn-contact input[type="submit"]{
-	margin-top: 15px;
+.script .btn-contact input[type="button"]{
+    margin-top: 15px;
 	padding: 5px;
 	width: 15%;
 	background-color: #EDBC10;
@@ -1210,12 +1200,54 @@ p {
     font-size: 19px;
     font-family: "poppins regular";
 }
+.script .error{
+	color: red;
+}
 
 
 .map-contact{
     margin-top: 100px;
 }
+
+/* ========Media-Contact======== */
+
 @media screen and ( max-width : 930px){
+    .section-contact .title h1 {
+        /* margin: auto !important; */
+        padding: 0px;
+        margin-left: 150px;
+    }
+    .section-contact .title {
+        justify-content: center !important;
+    }
+    #cc{
+        width: 100% !important;
+    }
+   .contact-description{
+         display: list-item;
+   }
+   
+  #phone-contact{
+        flex-direction: column;
+  }
+   #myform {
+       margin-left: 20%;
+    
+   }
+   .script{
+    margin-right: 10% !important;
+    color: turquoise;
+   }
+   #name{
+       width: 410px !important;
+   }
+   #email,#phone,#Subject,#message{
+    width: 398px !important;
+   }
+   #btn-env{
+    width: 100px !important;
+   }
+
 
 }
 
@@ -1243,10 +1275,10 @@ p {
 .script h4{
 	color: #EDBC10;
 }
-.script .input-field{
+.script .input-forme-contact{
 	margin-bottom: 5px;
 }
-.script .input-field input[type="text"],
+.script .input-forme-contact input[type="text"],
 .script textarea{
 	width: 70%;
 	border: 1px solid black;
@@ -1256,7 +1288,7 @@ p {
 	height: 80px;
 	resize: none;
 }
-.script .btn input[type="submit"]{
+.script .btn-contact input[type="submit"]{
 	margin-top: 15px;
 	padding: 5px;
 	width: 15%;

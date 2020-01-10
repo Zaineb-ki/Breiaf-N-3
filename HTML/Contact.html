@@ -44,7 +44,9 @@
   </div>
 </div>
 <div class="nav-bar">
-  <div><img src="Pics\up.png"></div>
+    <div>
+      <img src="Pics\up.png">
+    </div>
   <ul>
       <li><a href="Home.html">Home</a></li>
       <li><a href="AboutUS.html">About Us</a></li>
@@ -85,85 +87,94 @@
 </div>
 <div class="contact-description">
         
-        <div class="script-contact">
-
-        </div>
-        <div class="image-contact">
-            <img src="Pics\bigstock-Cleaning-service-team-working-181279054.jpg"/>
-        </div>
-
-        <div class="text-contact">
-            <p>
-                For more information ، a free quote ، a question about our skills 
-                or our cleaning prices ، various works ، facilities or multi-service
-                work in Saint-Genis-Pouilly and everywhere in France ، please contact ،
-                our team is at your disposal. We will contact you as soon as we receive your message.
-                Contact Us ، To send us your comments ، your questions and service requests ، 
-                please contact us using the form below. We will get back to you within 24 hours.<br><br>
-
-               
-            </p>
-           
-        </div>
-        <div class="script-contact">
-            
-               <form id="forme-contact">
-                   <div class="input-forme-contact">
-                       <h4>Name</h4>
-                       <input type="text" placeholder="" id="Name-contact">
-                   </div>
-                   <div class="input-forme-contact">
-                       <h4>Your Email (Required)</h4>
-                       <input type="text" placeholder="" id="Email-contact">
-                   </div>
-                   <div class="input-forme-contact">
-                       <h4>Phone Number</h4>
-                       <input type="text" placeholder="" id="Phone-contact">
-                   </div>
-                   <div class="input-forme-contact">
-                    <h4>Subject</h4>
-                    <input type="text" placeholder="" id="Subject-contact">
-                </div>
-                   <div class="input-forme-contact">
-                       <h4>Your Message</h4>
-                       <textarea id="message" placeholder=""></textarea>
-                   </div>
-                   <div class="btn-contact">
-                       <input type="Submit" value="Send">
-                   </div>
-               </form>
-            
-        </div>
-</div>
-
-
-<div class="map-contact">
-    <center>
-    <div class="mapouter"><div class="gmap_canvas">
-        <iframe width="747" height="518" id="gmap_canvas" src="https://maps.google.com/maps?q=2%20Rue%20Victor%20Hugo%2001630%20-%20SAINT-GENIS-POUILLY&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        <a href="https://www.online-timer.net"></a>
-    </div>
-        <style>.mapouter{position:relative;text-align:right;height:518px;width:747px;}.gmap_canvas {overflow:hidden;background:none!important;height:518px;width:747px;}</style>
-    </div>
-    </center>
-</div>
-<div class="contact-phone">
-    
-    <div class="phone">
-        <span> Phone : +33 6 51 70 12 73<br></span>
-        <span> Home : 0 590 55 670</span>
-    </div>
-    <div class="Our-schedules">
         
-        <center>
-            <p style="color: #EDBC10; font-size: 22px; font-family: poppins;">Our schedules</p>
-        </center>
-        <p class="time">LUNDI - VENDREDI : De 09h00 à 18h00</pclass="time">
-        <p class="time">Samedi : De 09h00 à 13h00
-        </p>
-    </div>
-
+        <div id="cc">
+            <div class="image-contact">
+                <center>
+                    <img src="Pics\bigstock-Cleaning-service-team-working-181279054.jpg"/>
+                </center>
+            </div>
+    
+            <div class="text-contact">
+                <center>
+                    <p style="width: 80%;text-align: left;">
+                        For more information ، a free quote ، a question about our skills 
+                        or our cleaning prices ، various works ، facilities or multi-service
+                        work in Saint-Genis-Pouilly and everywhere in France ، please contact ،
+                        our team is at your disposal. We will contact you as soon as we receive your message.
+                        Contact Us ، To send us your comments ، your questions and service requests ، 
+                        please contact us using the form below. We will get back to you within 24 hours.<br><br>
+        
+                       
+                    </p>
+                </center>
+               
+            </div>
+        </div>
+        <div class="script">
+			<form id="myform">
+			<!-- <form id="myform" onsubmit="return validation()"> -->
+				<div id="input-forme-contact1" style=" margin-bottom: 41px;">
+					<label class="titre" class="label-and-input">Name</label><span id="sname" class="error"></span><br>
+					<input type="text"  class="label-and-input" id="name" style="background-color: #F8F8F8; border: 1px solid #ECE3E3; width: 618px; height: 50px;">
+				</div>
+				<div class="input-forme-contact" style=" margin-bottom: 41px; ">
+					<label class="titre" class="label-and-input">Your Email (Required)</label><span id="semail" class="error"></span><br>
+					<input type="email" class="label-and-input" id="email" style=" height: 40px;">
+				</div>
+				<div class="input-forme-contact" style=" margin-bottom: 41px;">
+					<label class="titre" class="label-and-input">Phone Number</label><span id="sphonnn" class="error"></span><br>
+					<input type="phone" class="label-and-input" id="phone" style=" height: 40px;">
+                </div>
+                <div class="input-forme-contact" style=" margin-bottom: 41px;">
+					<label class="titre" class="label-and-input">Subject</label><span id="sphonnn" class="error"></span><br>
+					<input type="text" class="label-and-input" id="Subject" style="background-color: #F8F8F8; border: 1px solid #ECE3E3; width: 602px; height: 40px;">
+				</div>
+				<div class="input-forme-contact" style=" margin-bottom: 41px;">
+					<label class="titre" class="label-and-input">Your Message</label><span></span><br>
+					<textarea id="message" class="label-and-input" style="height: 130px; background-color: #F8F8F8; border: 1px solid #ECE3E3; width: 600px;"></textarea>
+				</div>
+				<div class="btn-contact">
+					<input type="button" id="btn-env" class="label-and-input" value="Send" onclick="validation()">
+				</div>
+			</form>
+		</div>	
 </div>
+
+<div class="map">
+    <div class="map-contact">
+        <center>
+        <div class="mapouter"><div class="gmap_canvas">
+            <iframe width="747" height="518" id="gmap_canvas" src="https://maps.google.com/maps?q=2%20Rue%20Victor%20Hugo%2001630%20-%20SAINT-GENIS-POUILLY&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <a href="https://www.online-timer.net"></a>
+        </div>
+            <style>.mapouter{position:relative;text-align:right;height:518px;width:747px;}.gmap_canvas {overflow:hidden;background:none!important;height:518px;width:747px;}</style>
+        </div>
+        </center>
+    </div>
+   
+    
+</div>
+<section>
+    <center>
+        
+        <div style="width: 50%;">
+            <div id="phone-contact" style="display: flex;justify-content: space-between;">
+                <div style="font-size: 19px; color: #3E3E3E;">
+                    <br>
+                    <span> Phone : +33 6 51 70 12 73</span><br>
+                    <span> Home : 0 590 55 670</span>
+                </div>
+                <div>
+                    <p style=" font-family: poppins; color: #EDBC10; font-size: 20px; ">Our schedules</p>
+                    <p class="time" style="font-size: 14px; color: #3E3E3E;">LUNDI - VENDREDI : De 09h00 à 18h00</p>
+                    <p class="time" style="font-size: 14px; color: #3E3E3E;">Samedi : De 09h00 à 13h00
+                    </p>
+                </div>
+            </div>
+        </div>
+    </center>
+</section>
 
 
 
@@ -245,7 +256,57 @@
 
 
 
+<script>
+function validation(){
+	var name = document.getElementById("name").value;
+	var email = document.getElementById("email").value;
+	var phone = document.getElementById("phone");
+	var message = document.getElementById("message").value;
+	var error = document.getElementById("error");
+	var text;
+	var a = /^(\+212)+([5-7]{1})+([0-9]{8})$/;
 
+	
+
+	//name
+	if (name==""){
+		document.getElementById('sname').innerHTML = "*Please Enter Your Name";
+	}
+	else{
+		document.getElementById('sname').innerHTML = "";
+	}
+
+	//email
+	if (email==""){
+		document.getElementById('semail').innerHTML = "*Please Enter Your Email";
+	}
+	else if (email.indexOf("@") ==-1 ) {
+		document.getElementById('semail').innerHTML = "error";
+	}
+	else{
+		
+		document.getElementById('semail').innerHTML = "";
+	}
+  
+  //phone
+   if ( phone.value == "")
+   {
+      document.getElementById('sphonnn').innerText="*this field must be filled";
+     
+   }
+   else if (!a.test(phone.value))
+   {
+      document.getElementById('sphonnn').innerText="*erreur!!";
+
+   }
+   else
+   {
+    document.getElementById('sphonnn').innerHTML="";
+   }
+	
+}
+
+</script>
 
 
 
