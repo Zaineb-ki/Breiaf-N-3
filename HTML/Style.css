@@ -114,6 +114,9 @@ body {
 }
 
 @media screen and (max-width: 930px){
+    .header #welcome{
+        margin-left: 4%;
+    }
 	.nav-bar{
 		display: none !important;
 	}
@@ -127,7 +130,11 @@ body {
 		text-align:  center !important;
 		position:relative !important;
 		margin-left: 0px;
-	}
+    }
+    .nav-bar-mobile ul .active a{
+        color: #38ADA9;
+    
+    }
 }
 /*==================
  CONTENT SECTION BLOG

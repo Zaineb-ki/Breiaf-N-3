@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style2.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script type="text/javascript">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CleanUp | Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Script-->
+    <script type="text/javascript">
 		function mobile_menu(){
 			var a=document.getElementById('dropdown');
 			if (a.style.display=="none") {
@@ -15,53 +18,68 @@
 			}
 		}
 	</script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Pics\men.png" type="image/x-icon">
 
-	<title>Blog</title>
+    <!-- Main style sheet -->
+    <link href="Style2.css" rel="stylesheet"> 
+    
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/90140a3798.js" crossorigin="anonymous"></script>
+
+
+
 </head>
 <body>
-	<section class="topheader">
-	<div class="header" >
-		<div style="float:left !important;margin-left: 14%;" id="welcome">
-			<span style="">Welcome To our Cleaning Company</span>
-		</div>
-		<div id="phone-email" style="float: right; margin-right: 11%;">
-				<span>Phone: +33 6 51 70 12 73</span>
-				<span>Email: cleanUp<span id="Email">@company.com</span></span>
-				
-		</div>
-	</div>
-	<div class="nav-bar">
-		<div><img src="img/logo.png"></div>
-		<ul>
-			<li><a href="Home.html">Home</a></li>
-			<li><a href="AboutUs.html">About Us</a></li>
-			<li><a href="Services.html">Services</a></li>
-			<li><a href="OurWorks.html">Our Works</a></li>
-			<li><a href="pricing.html">Pricing</a></li>
-			<li class="active"><a href="blog.html">Blog</a></li>
-			<li><a href="Contact.html">Contact</a></li>
-			<li id="Request"><a href="Request.html">Request A Quote</a></li>
-		</ul>
-	</div>
-	<div class="nav-bar-mobile">
-		<div>
-			<img style="width: 25%;margin-left: 5%" src="img/logo.png">
-			<input type="button" name="" id="btn_menu" onclick="mobile_menu()" style="float: right;background-image: url(img/menu.png);width: 40px;height: 40px;margin-right: 5%;cursor: pointer; border: 0px; border-style: none;">
-		</div>
-		<ul id="dropdown" style="display: none;">
-			<li><a href="Home.html">Home</a></li>
-			<li><a href="AboutUs.html">About Us</a></li>
-			<li><a href="Services.html">Services</a></li>
-			<li><a href="OurWorks.html">Our Works</a></li>
-			<li><a href="pricing.html">Pricing</a></li>
-			<li class="active"><a href="blog.html">Blog</a></li>
-			<li><a href="Contct.html">Contact</a></li>
-			<li ><a href="request.html">Request A Quote</a></li>
-		</ul>
-	</div>
-	<div id="Blog">
-		<p>Blog</p>
-	</div>
+
+<!-- Start menu -->
+<div class="header" >
+  <div id="welcome">
+      <span>Welcome To our Cleaning Company</span>
+  </div>
+  <div id="phone-email">
+          <span>Phone: +33 6 51 70 12 73</span>
+          <span>Email: cleanUp<span id="Email">@company.com</span></span>
+          
+  </div>
+</div>
+<div class="nav-bar">
+    <div>
+      <img src="Pics\up.png">
+    </div>
+  <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="AboutUS.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="OurWorks.html">Our Works</a></li>
+      <li><a href="Pricing.html">Pricing</a></li>
+      <li class="active"><a href="Blog.html">Blog</a></li class="active">
+      <li><a href="Contact.html">Contact</a></li>
+      <li id="Request"><a href="request.html">Request A Quote</a></li>
+  </ul>
+</div>
+<div class="nav-bar-mobile">
+  <div>
+      <img style="width: 25%;margin-left: 5%" src="Pics\up.png">
+      <button onclick="mobile_menu()" style="float: right;margin-right: 5%;cursor: pointer; border: 0px; border-style: none;background-color: transparent;">
+          <img style="width: 40px;height: 40px; background-color: transparent;" src="Pics\menu.png">
+      </button>
+  </div>
+  <ul id="dropdown" style="display: none;">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="AboutUS.html">About Us</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="OurWorks.html">Our Works</a></li>
+      <li><a href="Pricing.html">Pricing</a></li>
+      <li class="active"><a href="Blog.html">Blog</a></li class="active">
+      <li><a href="Contact.html">Contact</a></li>
+      <li ><a href="request.html">Request A Quote</a></li>
+  </ul>
+</div>
+
+<div id="bar">
+    <p>Blog</p>
+</div>
 	</section>
 	<div class="father">
     	<div class="wife1">
@@ -70,7 +88,7 @@
     			<div class="para">
     				<h3>7 TIPS FOR YOUR BEST HOLIDAY MEAL YET</h3>
 
-<p>After the biggest gift-giving week of the year, we’re willing to bet you’ll soon have a mountain of wrapping paper littering the living room floor. What are you supposed to do with all that festive, used-up paper? A lot of it can be recycled, but not all of it. Here’s what to consider when deciding whether certain wrapping paper is recyclable.</p>
+					<p>After the biggest gift-giving week of the year, we’re willing to bet you’ll soon have a mountain of wrapping paper littering the living room floor. What are you supposed to do with all that festive, used-up paper? A lot of it can be recycled, but not all of it. Here’s what to consider when deciding whether certain wrapping paper is recyclable.</p>
                  
     			</div>
     			<!--para-->
@@ -179,10 +197,10 @@
         <div class="column">
             <h2>Quick View</h2>
             <div><a href="Home.html">Home</a></div>
-            <div><a href="AboutUS.html">About-us</a></div>
+            <div><a href="AboutUS.html">About us</a></div>
             <div><a href="Services.html">Services</a></div>
             <div><a href="Blog.html">Blog</a></div>
-            <div><a href="Pricing.html">Pricing</a></div>
+            <div><a href="request.html">Request</a></div>
         </div>
 
         <div class="column">

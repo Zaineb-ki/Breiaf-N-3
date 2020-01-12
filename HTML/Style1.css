@@ -114,6 +114,9 @@ body {
 }
 
 @media screen and (max-width: 930px){
+    .header #welcome{
+        margin-left: 4%;
+    }
 	.nav-bar{
 		display: none !important;
 	}
@@ -127,15 +130,15 @@ body {
 		text-align:  center !important;
 		position:relative !important;
 		margin-left: 0px;
-<<<<<<< HEAD
+
     }
     .nav-bar-mobile #dropdown .active a {
         color: #38ADA9;
-=======
+
 	}
     .nav-bar-mobile ul .active a{
     color: #38ADA9;
->>>>>>> d268e9b296a3ce161469635cb5c717052d619d55
+
     }
 }
 /*==================
@@ -613,6 +616,7 @@ body {
     /* partie1 */
     
     #background{
+        background-image: url(background-phone.png);
         height: 700px !important;
     }
     #background-effet{
@@ -1172,7 +1176,7 @@ p {
 .script .titre{
     color: #EDBC10;
     font-family: "poppins";
-    font-size: 22px;
+    
 }
 .script .input-forme-contact{
     margin-bottom: 80px;
@@ -1221,7 +1225,7 @@ p {
     .section-contact .title h1 {
         /* margin: auto !important; */
         padding: 0px;
-        margin-left: 150px;
+        margin-left: 104px;
     }
     .section-contact .title {
         justify-content: center !important;
@@ -1245,15 +1249,26 @@ p {
     color: turquoise;
    }
    #name{
-       width: 410px !important;
+       width: 300px !important;
+       height: 56px;
    }
    #email,#phone,#Subject,#message{
-    width: 398px !important;
+    width: 286px !important;
+
    }
    #btn-env{
-    width: 100px !important;
+    width: 80px !important;
    }
-
+   .contact-description #cc .image-contact img {
+    width: 85%;
+    margin-right: 4% !important;
+    border-radius: 45px;
+    
+}
+#gmap_canvas{
+    width: 375px;
+    margin-right: 50%;
+}
 
 }
 

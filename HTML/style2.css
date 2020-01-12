@@ -1,3 +1,24 @@
+html{
+    height: 100%;
+    background-color: #ffffff;
+    font-family: "Poppins";
+    color: #333333;
+    font-size: 16px;
+    overflow-x: hidden;
+
+  }
+li{
+    
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    color: #3E3E3E;
+}
+/*==================
+ HEADER SECTION
+====================*/
+
 body {
 	margin: 0;
 	width: 100% !important;
@@ -9,12 +30,19 @@ body {
 	font-size: 14px;
 	font-family: 'poppins light' ;
 	color: #7C7C7C;
-	height: 40px;
-	line-height: 40px;
-	/*overflow: hidden !important;*/
+    height: 60px;
+    line-height: 55px;
+	
 
 }
-
+.header #welcome {
+    float:left !important;
+    margin-left: 14%;
+}
+.header #phone-email{
+    float: right;
+    margin-right: 15%;
+}
 #Email{
 	color: #38ADA9;
 }
@@ -25,6 +53,7 @@ body {
   left: 15px;
 }
 .nav-bar{
+    width: 1802px;
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -37,6 +66,9 @@ body {
   list-style: none;
   font-family: 'poppins medium';
   font-size: 14px;
+}
+.nav-bar ul .active a{
+    color: #38ADA9;
 }
 .nav-bar ul li a{
 	text-decoration: none;
@@ -51,14 +83,14 @@ body {
 #Request a{
 	color: white;
 }
-#Blog{
+#bar{
 
 	margin:0;
 	background-color:#38ADA9;
 	height: 80px;
 	width: 100% !important;
 }
-#Blog p{
+#bar p{
 	font-family: 'poppins medium' ;
 	font-size:35px;
 	margin: 0;
@@ -75,25 +107,16 @@ body {
 #dropdown li{
 	list-style: none;
 	line-height: 40px;
-	font-family: 'poppins Regular';
-	color: #7C7C7C;
 }
 #dropdown li a{
 	text-decoration: none;
 	padding-left: 30px;
-	font-family: 'poppins Regular';
-	color: #7C7C7C;
-	font-size: 20px;
 }
-.img3{
-	display: none;
-}
-.nav-bar ul .active a{
-    color: #38ADA9;
-}
-
 
 @media screen and (max-width: 930px){
+    .header #welcome{
+        margin-left: 4%;
+    }
 	.nav-bar{
 		display: none !important;
 	}
@@ -103,15 +126,20 @@ body {
 	#phone-email{
 		display: none;
 	}
-	#Blog p{
+	#bar p{
 		text-align:  center !important;
 		position:relative !important;
 		margin-left: 0px;
-	}
-	.nav-bar-mobile ul .active a{
-	color: #38ADA9;
-}
 
+    }
+    .nav-bar-mobile #dropdown .active a {
+        color: #38ADA9;
+
+	}
+    .nav-bar-mobile ul .active a{
+    color: #38ADA9;
+
+    }
 }
 /*============
 blog
@@ -429,6 +457,8 @@ pricing
 	text-align: center;
 	color: #EDBC10;
 	font-family: 'poppins medium';
+	margin-bottom: 55px;
+    margin-top: 55px;
 }
 .pa{
 	line-height: 30px;
