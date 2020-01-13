@@ -437,6 +437,9 @@ p {
      .contact-body .contact-address .address-info{
          align-self: center;
      }
+     #text-footer{
+        text-align: center;
+    }
      
  
   } 
