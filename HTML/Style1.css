@@ -719,6 +719,9 @@ body {
 
     #icon-white{
         margin-right: 3%;
+        position: relative !important;
+        left: -56% !important;
+        bottom: -168px !important;
     }
     #container-partie7{
         margin-left: auto;
