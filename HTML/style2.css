@@ -200,7 +200,7 @@ blog
 }
 .para p{
 	font-family: 'poppins light';
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 30px;
 }
 
@@ -258,9 +258,9 @@ blog
 h4{
 	font-family: 'poppins medium';
 }
-p {
+.mamatswira p {
 	font-family: 'poppins light';
-	font-size: 16px;
+	font-size: 18px;
 }
 
 
@@ -322,22 +322,44 @@ request
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	width: 25%;
+	width: 100%;
+	max-width: 600px;
+}
+.img1 img{
+	width: 95%;
 }
 .container{
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
-.paragraphe{
-	width: 27%;
+
+.container .paragraphe p{
+	max-width: 682px;
 	font-family: 'poppins Regular';
-	font-size: 14px;
+	font-size: 22px;
 	color: #707070;
 }
+.paragraphe img{
+	width: 100%;
+}
 .script{
-	width: 40%;
+	max-width: 682px;
+	height: 940px;
+	display: flex;
 /*	background-color: grey;
 */}
+
+
+.script #myform>div{
+	margin-bottom: 60px;
+	margin-top: 20px;
+	font-size: 22px;
+	font-weight: lighter
+}
+.script #myform>div>input{
+	height: 30px;
+}
+
 .script .titre{
 	color: #EDBC10;
 }
@@ -346,15 +368,15 @@ request
 }
 .script .input-field input[type="text"],
 .script .input-field input[type="email"],
- .script .input-field input[type="phone"],
+.script .input-field input[type="phone"],
 .script textarea{
-	width: 70%;
+	width: 682px;
 	border: 1px solid #ECE3E3;
 	padding: 7px;
 	background-color: #F8F8F8;
 }
 .script textarea{
-	height: 130px;
+	height: 315px;
 	resize: none;
 }
 .script .btn input[type="button"]{
@@ -375,7 +397,7 @@ request
 
 @media screen and (max-width: 930px){
 	.img1{
-		width: 100%;
+		
 		text-align: center;
 	}
 	.img2{
@@ -383,7 +405,7 @@ request
 	}
 	.img3{
 		display: block;
-		width: 100%;
+	/*	width: 95%;*/
 
 	}
 	.container{
@@ -401,6 +423,13 @@ request
 	}
 	.script #myform{
 		margin-left: 10px;
+		width: 100%;
+	}
+	.script .input-field input[type="text"],
+.script .input-field input[type="email"],
+.script .input-field input[type="phone"],
+.script textarea{
+	width: 90%;
 	}
 }
 
