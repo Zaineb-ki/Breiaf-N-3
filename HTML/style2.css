@@ -149,7 +149,7 @@ blog
 ============*/
 
 
-.father{
+.container01{
 	padding-top: 7%;
 	display: flex;
 	justify-content: space-between;
@@ -161,13 +161,13 @@ blog
 	
 
 }
-.wife1{
+.content01{
   /* background-color: red;*/
    
    width: 68%;
 
 }
-.wife2{
+.content02{
 	width: 28%;
   /* background-color: blue;*/
    
@@ -175,7 +175,7 @@ blog
 
    
 }
-.tswira1{
+.pic01{
 	/*background-color: gray;*/
 	margin-left:12px;
 	justify-content: space-between;
@@ -186,7 +186,7 @@ blog
 	height: 15%;
     
 }
-.tswira1:hover{
+.pic01:hover{
 	opacity: 0.5;
 	
 
@@ -204,32 +204,32 @@ blog
 	line-height: 30px;
 }
 
-.mamatswira{
+.pic02{
 	/*background-color: purple;*/
 	display: flex;
 	justify-content: space-around;
 	
 	
 }
-.mama1{
+.imgAndContent1{
 	/*background-color: brown;*/
 
 	width: 47%;
     /*border: 1px solid gray*/
 
 }
-.mama1:hover{
+.imgAndContent1:hover{
 	opacity: 0.5;
 	 
 }
-.mama2{
+.imgAndContent2{
 	/*background-color: orange;*/
 	width: 47%;
 	 /*border: 1px solid gray*/
 	
 
 }
-.mama2:hover{
+.imgAndContent2:hover{
 	opacity: 0.5;
 
 	 
@@ -239,7 +239,7 @@ blog
 	line-height: 23px;
 	padding: 10px;
 }
-.wife2  p{
+.content02  p{
 	
 	/*background-color: pink;*/
 	padding-bottom: 20px;
@@ -250,7 +250,7 @@ blog
 	font-family: 'poppins medium';
 	color: #333333;
 }
-.wife2 h2{
+.content02 h2{
 	text-align: center;
 	color: #38ADA9;
 	font-family: 'poppins medium';
@@ -258,7 +258,7 @@ blog
 h4{
 	font-family: 'poppins medium';
 }
-.mamatswira p {
+.pic02 p {
 	font-family: 'poppins light';
 	font-size: 18px;
 }
@@ -268,14 +268,14 @@ h4{
 	/*.topheader{
 		width: 100%;
 	}*/
-	.father{
+	.container01{
 		justify-content: center;
 	}
-	.wife1{
+	.content01{
 		width: 70%;
 	}
 
-	.tswira1{
+	.pic01{
 		/*justify-content: space-between;
     border: 1px solid gray;
     display: flex;*/
@@ -285,28 +285,28 @@ h4{
     flex-direction: column;
     margin-left: 0;
 	}
-	.mamatswira{
+	.pic02{
 		flex-direction: column;
 	}
 
-	.wife2{
+	.content02{
 		display: none;
 	}
-	.father{
+	.container01{
 		width: 100%;
 	}
 	.para{
 		width: 100%;
 	}
-	.mama1{
+	.imgAndContent1{
 		width: 100%;
 		}
 		
-	.mama2{
+	.imgAndContent2{
 		width: 100%;
 		margin-top: 50px;
 	}
-	.father .wife1 img{
+	.container01 .content01 img{
 		width: 100%;
     height: 40%;
 	}
