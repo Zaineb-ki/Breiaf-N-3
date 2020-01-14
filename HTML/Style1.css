@@ -948,18 +948,18 @@ body {
     padding-top: 2%;
     font-family: "poppins medium";
 }
-#cc{
+#contact-description1{
     background-color: transparent;
     width: 55% !important;
     justify-content: center !important;
 }
-.contact-description #cc .image-contact{
+.contact-description #contact-description1 .image-contact{
     background-color: transparent;
     justify-content: center !important;
     width: 100%;
     padding: 0px !important;
 }
-.contact-description #cc .image-contact img {
+.contact-description #contact-description1 .image-contact img {
     width: 80%;
     margin: auto !important;
     border-radius: 45px;
@@ -967,12 +967,12 @@ body {
 
     
 }
-.contact-description #cc .text-contact{
+.contact-description #contact-description1 .text-contact{
     display: flex;
     width: 100%;
 
 }
-.contact-description #cc .text-contact p{
+.contact-description #contact-description1 .text-contact p{
    
     color: #707070;
     font-family: "poppins regular";
@@ -1055,7 +1055,7 @@ body {
     .section-contact .title {
         justify-content: center !important;
     }
-    #cc{
+    #contact-description1{
         width: 100% !important;
     }
    .contact-description{
@@ -1092,7 +1092,7 @@ body {
    #btn-env{
     width: 80px !important;
    }
-   .contact-description #cc .image-contact img {
+   .contact-description #contact-description1 .image-contact img {
     width: 85%;
     margin-right: 4% !important;
     border-radius: 45px;
